@@ -17,11 +17,54 @@
         return (nota1+nota2+nota3+nota4)/4
       }*/
 
-      const recebeNotasEstudante = function (nota1, nota2, nota3, nota4) {
-        return (nota1+nota2+nota3+nota4)/4
-      }
+      // const recebeNotasEstudante = function (nota1, nota2, nota3, nota4) {
+      //   return (nota1+nota2+nota3+nota4)/4
+      // }
 
-      alert(recebeNotasEstudante(8, 6, 7, 3))
+      // alert(recebeNotasEstudante(8, 6, 7, 3))
+
+
+      // const negativoOuPositivo = function(numero) {
+      //   if(numero % 2 == 0){
+      //     alert("O número é par")
+      //   } else {
+      //     alert("O número é impar")
+      //   }
+      // }
+      // negativoOuPositivo(10)
+
+
+      const negativoOuPositivo = function(numero) {
+        if(numero > 0){
+          return "Positivo"
+        }else if (numero < 0){
+          return "Negativo"
+        }else{
+          return "Zero"
+        }
+      }
+      alert(negativoOuPositivo(-5))
+      alert(negativoOuPositivo(15))
+
+
+      // const parOuImpar = (numero) => {
+      //   if(numero % 2 == 0){
+      //     return"Par"
+      //   } else if (numero % 2 == 1){
+      //     return"Impar"
+      //   }
+      // }
+      // alert(parOuImpar(7))
+      // alert(parOuImpar(4))
+
+
+      const parOuImparOpTernario = (numero) => {
+        return numero % 2 == 0 ? "par" : "impar"
+      }
+      alert (parOuImparOpTernario(7))
+      alert (parOuImparOpTernario(4))
+      
+
 
 
 
