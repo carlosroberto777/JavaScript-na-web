@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const receberNumeroUsuario = function(operador, n1, n2){
+            switch (operador){
+                case 1:
+                    alert(n1 + n2)
+                    break;
+
+                case 2:
+                    alert(n1 - n2)
+                    break;
+                
+                case 3:
+                    if (n1===0){
+                        alert("Erro, número 0 não pode ser dividido")
+                    } else {
+                        alert(n1 / n2)
+                        break; 
+                    }
+                   
+
+                case 4:
+                    alert(n1 * n2)
+                    break;    
+            }
+         }
+            const receberOperador = parseInt(prompt(`Escolha uma operação: \n1 - Somar \n2 - Subtrair \n3 - Dividir \n4 - Multiplicar`))
+            const receberNumero1 = parseFloat(prompt(`Digite o primeiro número: `))
+            const receberNumero2 = parseFloat(prompt(`Digite o segundo número: `))
+            receberNumeroUsuario(receberOperador, receberNumero1, receberNumero2)
+    </script>
+    
+</body>
+</html>
